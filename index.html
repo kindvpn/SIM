@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package & Plans</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #2a3a7c);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .packages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .package-card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .package-header {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .dtac {
+            background-color: #0070c0;
+        }
+        
+        .true {
+            background-color: #e4002b;
+        }
+        
+        .ais {
+            background-color: #00a650;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .package-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .package-content {
+            padding: 20px;
+        }
+        
+        .package-details {
+            margin-bottom: 20px;
+        }
+        
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+        }
+        
+        .package-features {
+            margin-top: 20px;
+        }
+        
+        .features-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #2a3a7c;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4a6ee0;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #2a3a7c;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .packages {
+                flex-direction: column;
+            }
+            
+            .package-card {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Package & Plans</h1>
+            <p class="subtitle">Compare and choose the best mobile packages for your needs</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="packages">
+            <!-- DTAC Package -->
+            <div class="package-card">
+                <div class="package-header dtac">
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/yawlawt/YTPlusVip/main/images/d.png" alt="DTAC Logo">
+                    </div>
+                    <h2 class="package-title">DTAC PACKAGE</h2>
+                    <p>Reliable connectivity for everyone</p>
+                </div>
+                <div class="package-content">
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Data</span>
+                            <span>Unlimited 4G/5G</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Validity</span>
+                            <span>30 Days</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Price</span>
+                            <span>299 THB</span>
+                        </div>
+                    </div>
+                    
+                    <div class="package-features">
+                        <h3 class="features-title">Package Features</h3>
+                        <ul class="feature-list">
+                            <li>Unlimited high-speed internet</li>
+                            <li>Free calls to all networks</li>
+                            <li>100 SMS per day</li>
+                            <li>Free DTAC WiFi access</li>
+                            <li>No speed reduction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- TRUE Package -->
+            <div class="package-card">
+                <div class="package-header true">
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/yawlawt/YTPlusVip/main/images/t.png" alt="TRUE Logo">
+                    </div>
+                    <h2 class="package-title">TRUE PACKAGE</h2>
+                    <p>Fast speeds for modern life</p>
+                </div>
+                <div class="package-content">
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Data</span>
+                            <span>50GB 5G High-Speed</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Validity</span>
+                            <span>30 Days</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Price</span>
+                            <span>399 THB</span>
+                        </div>
+                    </div>
+                    
+                    <div class="package-features">
+                        <h3 class="features-title">Package Features</h3>
+                        <ul class="feature-list">
+                            <li>5G super high speed up to 50GB</li>
+                            <li>Free TRUE WiFi hotspots</li>
+                            <li>Unlimited calls within TRUE network</li>
+                            <li>Free subscription to TRUE ID</li>
+                            <li>Special discounts on partner apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AIS Package -->
+            <div class="package-card">
+                <div class="package-header ais">
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/yawlawt/YTPlusVip/main/images/a.png" alt="AIS Logo">
+                    </div>
+                    <h2 class="package-title">AIS PACKAGE</h2>
+                    <p>Thailand's leading network</p>
+                </div>
+                <div class="package-content">
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Data</span>
+                            <span>Unlimited 4G/5G (Max Speed 10Mbps)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Validity</span>
+                            <span>30 Days</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Price</span>
+                            <span>199 THB</span>
+                        </div>
+                    </div>
+                    
+                    <div class="package-features">
+                        <h3 class="features-title">Package Features</h3>
+                        <ul class="feature-list">
+                            <li>Unlimited internet at max 10Mbps</li>
+                            <li>Free AIS WiFi spots nationwide</li>
+                            <li>100 minutes of calls to all networks</li>
+                            <li>Free AIS Play entertainment</li>
+                            <li>Special privileges with AIS Rewards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Package & Plans &copy; 2023 - All rights reserved</p>
+    </footer>
+</body>
+</html>
